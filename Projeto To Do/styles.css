@@ -1,0 +1,94 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+    outline: none;
+}
+
+h1 {
+    color: #000;
+    font-size: 60px;
+    margin: 60px auto 0;
+    text-align: center;
+}
+
+body {
+    background: url("./img/back.jpg");
+}
+
+.container {
+    background-color: #d1d1d1;
+    width: 600px;
+    border-radius: 10px;
+    padding: 18px;
+    margin: 25px auto 0;
+}
+
+.input-task {
+    border: none;
+    border-radius: 5px;
+    width: 460px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+::placeholder {
+    opacity: 0.5;
+    font-weight: bold;
+}
+
+.button-task {
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: darkgreen;
+    color: #ffff;
+    font-size: 16px;
+    padding: 0 15px;
+    float: right;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.button-task:hover {
+    opacity: 0.8;
+}
+
+
+.list-task {
+    width: 100%;
+    list-style: none;
+    margin-top: 25px;
+}
+
+.task {
+    background-color: #f2f2f2;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+img {
+    height: 25px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.task:hover img {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.done {
+    background-color: green;
+    text-decoration: solid;
+    color:#ffff;
+}
